@@ -1,0 +1,281 @@
+body {
+    font-family: 'Noto Serif JP', serif;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  ul {
+    padding: 0;
+  }
+  
+  p {
+    font-size: 15px;
+  }
+
+  body {
+    margin: 0 ;
+  }
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-title {
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+#nav-menu {
+    text-align: right;
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+#nav-menu > a {
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+#shiro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.shiro-left {
+    text-align: center;
+    width: 50%;
+}
+
+.shiro-right {
+    text-align: center;
+    width: 50%;
+}
+
+#about {
+    display: flex;
+    margin-top: 100px;
+}
+
+.about-left {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.img-left {
+    align-self: flex-start;
+    width: 100%;
+}
+
+.img-right {
+    align-self: flex-end;
+    width:100%;
+}
+
+.img-right_wrap {
+    margin-top: 4vw;
+}
+
+.img-left_wrap,
+.img-right_wrap {
+    width:46%
+}
+
+.img-right_wrap {
+    margin-top: 4vw;
+
+}
+
+.about-right {
+    width: 50%;
+}
+
+.section-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-text_inner {
+    padding: 6vw;
+}
+
+#salon {
+    display: flex;
+    height: 40vw;
+    margin-top: 100px;
+}
+
+.salon-left {
+    width: 50%;
+}
+
+.salon-right {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+
+#menu {
+    display: flex;
+    height: 40vw;
+    margin-top: 100px;
+}
+
+.menu-left {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+
+.menu-right {
+    width: 50%;
+}
+
+.contents-box {
+    position: relative;
+    margin-top: 100px;
+}
+
+.contents-box h2 {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.contents2-box {
+    position: relative;
+    margin-top: 100px;
+}
+
+.contents-box a {
+    position: absolute;
+    color: white;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.contents-img {
+    width: 100%;
+}
+
+.diary-list_item {
+    position: relative;
+}
+
+
+.diary-list_link::after {
+    content:"";
+    display:inline-block;
+    background-image: url(./images/circle-arrow-right-solid.svg);
+    width: 1.75em;
+    height: 1.75em;
+    background-size: contain;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%,-50%);
+}
+
+.contents2-btn {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.contents2-btn::after {
+    content:"";
+    display:inline-block;
+    background-image: url(./images/circle-arrow-right-solid.svg);
+    width: 1.75em;
+    height: 1.75em;
+    background-size: contain;
+    vertical-align: middle;
+    margin: 0.75em;
+}
+
+.contents2-img {
+    width: 100%;
+}
+
+#diary {
+    padding:6vw;
+    max-width: 880px;
+    margin: auto;
+}
+
+#diary ul {
+    list-style: none;
+}
+
+.diary-list_item {
+    color: gray;
+    border-top: 1px solid gray;
+}
+
+.diary-btn {
+    border-top: 1px solid gray;
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+}
+
+ footer {
+    margin-top: 100px;
+    text-align: center;
+    color: gray;
+ }
+
+/* スマホ版 */
+@media screen and ( max-width:600px )
+{   
+     header {
+        display: none;
+    }
+    #shiro ,#about, #salon, #menu {
+        height: initial;
+        text-align: center;
+    }
+    #shiro > *,#about > *,#salon > *,#menu > * {
+        width: 100%;
+    }
+    #shiro {
+        margin-top: 20px;
+        flex-direction: column-reverse;
+    }
+    #about {
+        flex-direction: column;
+    }
+    #salon {
+        flex-direction: column-reverse;
+    }
+    #menu {
+        flex-direction: column;
+    }
+}   
